@@ -90,6 +90,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: background_hills_sprite
       objectReference: {fileID: 0}
+    - target: {fileID: 4918627537496164814, guid: 3cbecc36b1f9ddd4db6f40bad5d26f54, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cbecc36b1f9ddd4db6f40bad5d26f54, type: 3}
 --- !u!4 &6911087529428955236 stripped
@@ -151,6 +155,10 @@ PrefabInstance:
     - target: {fileID: 65505888229091743, guid: cee9b4f459610364a85c51420bf3a719, type: 3}
       propertyPath: m_Name
       value: ground_grass_sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 65505888229091743, guid: cee9b4f459610364a85c51420bf3a719, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cee9b4f459610364a85c51420bf3a719, type: 3}
@@ -214,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: background_yellow_bushes_sprite
       objectReference: {fileID: 0}
+    - target: {fileID: 1007794361502468269, guid: 904f00c420bb1784ea77cc1fb985c31c, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 904f00c420bb1784ea77cc1fb985c31c, type: 3}
 --- !u!4 &5088713935419120059 stripped
@@ -275,6 +287,10 @@ PrefabInstance:
     - target: {fileID: 1691229150462280299, guid: c4ec3e698e34b444aa1777c51f69db5d, type: 3}
       propertyPath: m_Name
       value: background_green_bushes_sprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691229150462280299, guid: c4ec3e698e34b444aa1777c51f69db5d, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ec3e698e34b444aa1777c51f69db5d, type: 3}
