@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: text_translate_table_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 5123d92b270afb740838106c9d21d672, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 12129124352
+    m_Localized: "sc\xE8ne suivante"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106584850432
+    m_Localized: "sc\xE8ne pr\xE9c\xE9dente"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187679252922368
+    m_Localized: "os de gar\xE7on"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

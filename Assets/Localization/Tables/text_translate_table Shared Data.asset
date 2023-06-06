@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: text_translate_table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: text_translate_table
+  m_TableCollectionNameGuidString: 5123d92b270afb740838106c9d21d672
+  m_Entries:
+  - m_Id: 12129124352
+    m_Key: next Scene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106584850432
+    m_Key: previous scene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201124462592
+    m_Key: simple cat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259924410368
+    m_Key: tought cat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 394666426368
+    m_Key: botton cat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187679252922368
+    m_Key: spine boy
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6496498670121517084
+  references:
+    version: 2
+    RefIds:
+    - rid: 6496498670121517084
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1685999487995
