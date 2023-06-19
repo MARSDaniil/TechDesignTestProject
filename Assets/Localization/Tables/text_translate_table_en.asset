@@ -42,6 +42,14 @@ MonoBehaviour:
     m_Localized: spine boy
     m_Metadata:
       m_Items: []
+  - m_Id: 4931257766232064
+    m_Localized: increase cat size on click
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4935102403690496
+    m_Localized: counter =
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

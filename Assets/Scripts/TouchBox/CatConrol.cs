@@ -5,11 +5,19 @@ using UnityEngine;
 public class CatConrol : MonoBehaviour
 {
     public GameObject buttonOn;
-
     private GameObject catToAnimGameObject;
 
     private string colliderTag;
     Ray ray = new Ray();
+
+    [SerializeField]
+    private float normalSizeOfCat = 2f;
+    [SerializeField]
+    private float currentSizeOfCat = 2.2f;
+
+    public int countOfClick = 0;
+    [SerializeField]
+    private float timeOfWait = 10f;
     private void Start()
     {
         //    boxCollider2D = GetComponent<BoxCollider2D>();
@@ -27,6 +35,7 @@ public class CatConrol : MonoBehaviour
 
     private void RayCast()
     {
+        //object detection with RayCast
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(new Vector3(0, 0, -10), Input.mousePosition);
 
@@ -55,8 +64,9 @@ public class CatConrol : MonoBehaviour
 
     private void SelectTag(string colliderTag, RaycastHit hitInfo)
     {
-        getGameObjectComponent(hitInfo);
-        switch (colliderTag)
+
+        getGameObjectComponent(hitInfo); 
+        switch (colliderTag) //character tag detection
         {
             case "cat_always_anim":
                 Debug.Log("U touch always anim");
@@ -89,12 +99,14 @@ public class CatConrol : MonoBehaviour
 
     private void PlaySound()
     {
+        CountOfClick();
         if (catToAnimGameObject != null)
         {
             AudioClick audioClick = catToAnimGameObject.GetComponent<AudioClick>();
             audioClick.ClickSound();
         }
         
+        StartCoroutine(ChangeSize());
     }
 
     private void setActiveAnim(RaycastHit hitInfo)
@@ -102,7 +114,7 @@ public class CatConrol : MonoBehaviour
         
         
         Debug.Log("U try to get Animation");
-
+     
         Animator animCatToStart = catToAnimGameObject.GetComponent<Animator>();
 
         if (animCatToStart == null)
@@ -116,9 +128,18 @@ public class CatConrol : MonoBehaviour
 
         
     }
+    private void CountOfClick()
+    {
+        countOfClick += 1;
+    }
+    
+    public void UpdateSizeOfCat()
+    {
+        currentSizeOfCat += 1f;
+        countOfClick = countOfClick - 3;
+    }
 
-
-    private void SetActiveBotton()
+    private void SetActiveBotton() //open botton to next scene
     {
         if (buttonOn != null)
         {
@@ -130,6 +151,19 @@ public class CatConrol : MonoBehaviour
         }
 
     }
-    
+
+   private IEnumerator ChangeSize() //change size of cat for awhile
+    {
+
+        if (catToAnimGameObject != null)
+        {
+            catToAnimGameObject.transform.localScale = new Vector3(currentSizeOfCat, currentSizeOfCat, 1);
+        }
+        yield return new WaitForSeconds(timeOfWait);
+        if (catToAnimGameObject != null)
+        {
+            catToAnimGameObject.transform.localScale = new Vector3(normalSizeOfCat, normalSizeOfCat, 1);
+        }
+    }
 }
 

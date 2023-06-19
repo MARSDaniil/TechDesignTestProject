@@ -39,6 +39,14 @@ MonoBehaviour:
     m_Key: spine boy
     m_Metadata:
       m_Items: []
+  - m_Id: 4931257766232064
+    m_Key: increase size
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4935102403690496
+    m_Key: click counter
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
